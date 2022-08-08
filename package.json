@@ -1,0 +1,55 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/index.js",
+    "scss": "sass --watch src/resources/scss/app.scss src/public/css/app.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lqbao240101/nodejs_expressjs.git"
+  },
+  "keywords": [
+    "f8",
+    "blog",
+    "f8",
+    "nodejs",
+    "nodejs"
+  ],
+  "author": "lqbao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lqbao240101/nodejs_expressjs/issues"
+  },
+  "homepage": "https://github.com/lqbao240101/nodejs_expressjs#readme",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "date-and-time": "^2.4.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.5.0",
+    "mongoose-delete": "^0.5.4",
+    "mongoose-sequence": "^5.3.1",
+    "mongoose-slug-generator": "^1.0.4",
+    "slugify": "^1.6.5"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^13.0.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
+    "sass": "^1.54.0"
+  }
+}
